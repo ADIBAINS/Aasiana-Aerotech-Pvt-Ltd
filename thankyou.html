@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Dela+Gothic+One&family=Edu+QLD+Beginner&family=Homemade+Apple&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Zen+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>THANK YOU FOR RESPONSE</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .body{
+            font-family: "Rokkitt", serif;
+            padding: 2rem;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .imgemail img{
+            height: 320px ;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .text{
+            font-family: "Rokkitt", serif;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            letter-spacing: 0.05em;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.35rem;
+        }
+
+        .t1{
+            font-size: 48px ;
+        }
+
+        .t2{
+            font-size: 32px;
+        }
+
+        .t3{
+            font-size: 32px;
+        }
+
+        .t4{
+            font-size: 16px;
+        }
+
+        .btn{
+            margin-top:1.355rem ;
+            font-family: "Montserrat", sans-serif;
+            height: 60px;
+            width: 180px;
+            border-radius: 50px;
+            color: white;
+            background-color: rgba(9, 9, 9, 0.925);
+            cursor: pointer;
+            transition: box-shadow 300ms ease-in-out, transform 600ms ease-in-out;
+        }
+
+        .btn:hover{
+            transform: scale(1.01);
+            box-shadow: 0 0 3px 4px rgb(230, 229, 229);
+        }
+
+    </style>
+    <script>
+        // Redirect back to the homepage after 2 seconds
+        setTimeout(() => {
+            window.location.href = "index.html"; 
+        }, 4000);
+    </script>
+</head>
+<body>
+    <div class="body">
+        <div class="imgemail">
+            <img src="./Assets/mailimg.png" alt="mail image">
+        </div>
+        <div class="text">
+            <div class="heading">
+                <span class="t1">THANK YOU !! </span>
+                <span class="t2"> FOR REACHING US</span>
+            </div>
+            <span class="t3"> YOUR MESSAGE HAS BEEN SENT SUCCESSFULLY</span>
+            <span class="t4">( YOU WILL BE REDIRECTED TO THE MAIN WEBSITE AUTOMATICALLY )</span>
+            <button class="btn" type="button" onclick="window.location.href = 'index.html';">GO BACK HOME</button>
+        </div>
+    </div>
+    
+</body>
+</html>
