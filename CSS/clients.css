@@ -197,7 +197,7 @@ i{
 }
 
 .container{
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -210,14 +210,14 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 120px;
+    height: 50px;
+    width: 80px;
 }
 
 
 .imgclients{
-    height:100px;
-    width: 150px;
+    height:80px;
+    width: 100px;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
