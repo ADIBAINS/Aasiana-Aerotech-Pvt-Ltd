@@ -329,7 +329,11 @@ i{
     width: 100%;
     text-align: center;
 }
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 form{
     width: 650px;
