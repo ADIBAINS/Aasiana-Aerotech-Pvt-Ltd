@@ -61,6 +61,9 @@ nav.scrolled {
   }
 
 nav a{
+    font-size: 14px;
+    font-weight: 500;
+    font-family:var(--subheading);
     text-decoration: 0;
     color: white;
     /* border: 2px solid rgba(0, 0, 0, 0.833); */
@@ -115,8 +118,8 @@ nav .navopt a:hover{
     background-color: black;
     color: rgba(255, 255, 255, 0.964);
     cursor:pointer;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .job-btn:hover{
@@ -258,6 +261,7 @@ video::before {
 
 
 .textintro{
+    font-weight: 500;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -275,9 +279,9 @@ video::before {
 
 }
 .textintro .descintro{
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.75rem;
-    font-size: 16.5px;
+    font-size: 18px;
     opacity: 0.85;
     text-align: justify;
     font-family:var(--subheading)
