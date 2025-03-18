@@ -1,3 +1,5 @@
+/*Properties applicable to whole File */
+
 :root{
     --heading: 'Calibri', Arial, sans-serif; 
     --subheading: 'Calibri', Arial, sans-serif;
@@ -52,8 +54,15 @@ nav{
     background-color: white;
 
 }
+nav.scrolled {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
 nav a{
+    font-size: 14px;
+    font-weight: 500;
+    font-family:var(--subheading);
     text-decoration: 0;
     color: rgb(0, 0, 0);
     /* border: 2px solid rgba(0, 0, 0, 0.833); */
@@ -62,6 +71,9 @@ nav a{
     opacity: 0.85;
     transition: all 150ms ease-in-out;
 }
+nav.scrolled a{
+    color: black;
+  }
 
 .dropdown a{
     color: black;
@@ -105,8 +117,8 @@ nav .navopt a:hover{
     background-color: black;
     color: rgba(255, 255, 255, 0.964);
     cursor:pointer;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .job-btn:hover{
@@ -169,6 +181,107 @@ i{
     width: 1rem;
     height: 1rem;
     color: rgba(111, 111, 107, 0.847);
+}
+
+
+.implink{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(239, 241, 245, 0.945);
+    padding-bottom: 5rem;
+}
+
+.implink-heading{
+    font-family: var(--heading) ;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.implink-images{
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+
+.implink-images span{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    width: 100px;
+    height: 80px;
+    border-radius: 14px;
+    gap: 4px;
+    box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.444) ;
+}
+
+.implink-images a{
+    text-decoration: none;
+    width: 100px;
+    height: 80px;
+}
+
+.implink-images h4{
+    margin: 0;
+    padding: 10px 0 0 0 ;
+    width: 105px;
+    font-size: 10px;
+    font-family: var(--subheading);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.852);
+}
+
+
+span .dgca{
+    width: 90.47px;
+    height: 25.21px;
+}
+span .mca{
+    width: 90.06px;
+    height: 30.83px;
+}
+
+span .bcas{
+    width: 87.65px;
+    height: 54.54px;
+}
+
+span .aai{
+    width: 95.37px;
+    height: 66px;
+}
+
+span .faa{
+    width: 61.62px;
+    height: 61.62px;
+}
+
+span .iata{
+    width: 61px;
+    height: 61px;
+}
+
+span .aci{
+    width: 61px;
+    height: 71px;
+}
+
+span .icao{
+    width: 90px;
+    height: 75px;    
 }
 
 
@@ -328,145 +441,11 @@ i{
     width: 100%;
     text-align: center;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-form{
-    width: 650px;
-    height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2.25rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 24px;
-    box-shadow: 0 0 5px 2px rgba(40, 39, 39, 0.878) ;
-}
-
-.forms{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.forms span{
-    font-family: var(--subheading);
-    font-size: 14px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.923);
-    letter-spacing: 0.08em;
-    padding: 0 0 0.5rem 0.25rem;
-}
-
-.forms input{
-    width: 360px;
-    height: 60px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.668);
-    color: rgb(19, 19, 19);
-    font-family: var(--subheading);
-    font-size: 18px;
-    padding: 0.25rem;
-    border: 0.5px solid rgba(27, 27, 27, 0.874);
-}
-
-
-.forms textarea{
-    width: 360px;
-    height: 175px;
-    background-color: rgba(255, 255, 255, 0.818);
-    color: rgb(19, 19, 19);
-    font-family: var(--subheading);
-    font-size: 18px;
-    padding: 0.5rem 0.75rem;
-    border: none;
-    border: 0.75px solid rgba(27, 27, 27, 0.874);
-    border-radius: 24px;
-
-}
-.forms textarea:focus{
-    border-radius: 18px;
-    
-}
-
-.forms textarea::placeholder{
-    display: flex;
-    align-items: flex-start;
-    padding: 0.5rem;
-    font-size: 14px;
-}
-
-
-input:focus::placeholder {
-    color: transparent;
-  }
-  
-textarea:focus::placeholder {
-    color: transparent;
-  }
-
-.forms input::placeholder{
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    font-size: 14px;
-}
-
-.sub{
-    font-family: var(--subheading);
-    font-size: 16px;
-    font-weight: 600;
-    padding: 1rem 2rem;
-    border-radius: 40px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-
-
-.modhead{
-    text-align: center;
-    width: 70%;
-    font-family: var(--heading);
-    font-size: 20px;
-    font-weight: 700;
-    color: black;
-    padding: 1.25rem;
-    border-bottom: 1px solid black;
-}
-
-.can{
-    background-color: white;
-    color: black;
-}
-
-form .btn{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-dialog {
-    border: none;
-    border-radius: 24px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    
-    /* Ensure the dialog is centered */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
 
 
 .heading{
+    font-family: var(--heading);
     text-align: center; 
     margin: 2rem;
     font-size: 32px ;
