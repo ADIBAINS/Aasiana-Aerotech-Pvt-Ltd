@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,71 +18,119 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="./CSS/clients.css">
-    <title>CLIENTS</title>
+    <title>Aasiana Aerotech Private Limited : Leading Aviation consulting Firm in India</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo"><img src="./Assets/aasiana logo without bg.png" alt="Aasiana Aerotech Pvt Ltd"></div>
 
-            <div class="navopt">
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <div class="logo"><img src="./Assets/aasiana logo without bg.png" alt="Aasiana Aerotech Pvt Ltd"></div>
+
+                <div class="navopt">
                     <ul>
-                        <li class="nav-menu"><a href="index.html">HOME</a></li>
+                        <li class="nav-menu"><a href="#navhome">HOME</a></li>
                         <li class="nav-menu drop"><a href="javascript:void(0);"><i
                                     class="fa-solid fa-caret-down"></i>SERVICES</a>
                             <div class="dropdown">
-                                <a href="ourservices.html"><span>&bull;</span> Scheduled & Non-Scheduled
-                                    Operators: Permits, Approvals & Extensions</a>
-                                <a href="ourservices.html"><span>&bull;</span> Foreign Crew Approvals &
-                                    Special Crewing Requirements</a>
-                                <a href="ourservices.html"><span>&bull;</span> Aircraft Induction
-                                    (Import to VT Registration)</a>
-                                <a href="ourservices.html"><span>&bull;</span> Regulatory Manual
-                                    Approvals</a>
-                                <a href="ourservices.html"><span>&bull;</span> Special Flying
-                                    Permits</a>
-                                <a href="ourservices.html"><span>&bull;</span> Airworthiness Compliance
-                                    & Approvals</a>
-                                <a href="ourservices.html"><span>&bull;</span> Crew Solutions: Medical &
-                                    Regulatory Compliance</a>
-                                <a href="ourservices.html"><span>&bull;</span> Statutory Approvals (MCA,
-                                    DGFT & Other Regulatory Bodies)</a>
-                                <a href="alliedservices.html"><span>&bull;</span>Allied Services</a>
+                                <a href="ourservices.html" ><span>&bull;</span> Key Services</a>
+                                <a href="alliedservices.html"><span>&bull;</span> Allied Services</a>
                             </div>
                         </li>
                         <li class="nav-menu"><a href="clients.html">CLIENTS</a></li>
                         <li class="nav-menu"><a href="testimonials.html">TESTIMONIALS</a></li>
-                        <!-- <li class="nav-menu"><a href="#navimplinks">IMPORTANT LINKS</a></li> -->
+                        <li class="nav-menu"><a href="#navimplinks">IMPORTANT LINKS</a></li>
                         <li class="nav-menu"><a href="#navcontact">CONTACT</a></li>
                     </ul>
                 </div>
-            <div class="optjob">
-                <button class="job-btn" data-open-modal>GET IN TOUCH</button>
+                <div class="optjob">
+                    <button class="job-btn" onclick="contact()">GET IN TOUCH</button>
+                </div>
+            </nav>
+        </header>
+
+        <div class="clientsmain" id="navclients">
+            <div class="clientheading">CLIENTS</div>
+            <div class="container">
+                <div class="imgclients">
+                    <img src="./Assets/clients/aero nomad.png" alt="">
+                </div>
+                <div class="imgclients"><img src="./Assets/clients/atc red.jpg" alt=""></div>
+                <div class="imgclients"><img src="./Assets/clients/aviation horizon.jpg" alt=""></div>
+                <div class="imgclients"><img src="./Assets/clients/evelop.png" alt=""></div>
+                <div class="imgclients"><img src="./Assets/clients/fllypro.png" alt=""></div>
+                <div class="imgclients"><img src="./Assets/clients/flysky.png" alt=""></div>
+                <div class="imgclients"><img src="./Assets/clients/gss.png" alt=""></div>
+                <div class="imgclients"><img src="./Assets/clients/himalyan.png" alt=""></div>
+                <div class="imgclients"><img src="./Assets/clients/navyuga.png" alt=""></div>
+                <div class="imgclients"><img src="./Assets/clients/omega air.png" alt=""></div>
+                <div class="imgclients"><img src="./Assets/clients/sbs.png" alt=""></div>
             </div>
-        </nav>
-    </header>
-    
-    <div class="banner">
-        <video src="./Assets/clients2 banner new.mp4" video preload="auto" autoplay loop muted></video>
-    </div>
-    <div class="clientsmain" id="navclients">
-        <div class="clientheading">CLIENTS</div>
-        <div class="container">
-            <div class="imgclients">
-                <img src="./Assets/clients/aero nomad.png" alt="">
-            </div>
-            <div class="imgclients"><img src="./Assets/clients/atc red.jpg" alt=""></div>
-            <div class="imgclients"><img src="./Assets/clients/aviation horizon.jpg" alt=""></div>
-            <div class="imgclients"><img src="./Assets/clients/evelop.png" alt=""></div>
-            <div class="imgclients"><img src="./Assets/clients/fllypro.png" alt=""></div>
-            <div class="imgclients"><img src="./Assets/clients/flysky.png" alt=""></div>
-            <div class="imgclients"><img src="./Assets/clients/gss.png" alt=""></div>
-            <div class="imgclients"><img src="./Assets/clients/himalyan.png" alt=""></div>
-            <div class="imgclients"><img src="./Assets/clients/navyuga.png" alt=""></div>
-            <div class="imgclients"><img src="./Assets/clients/omega air.png" alt=""></div>
-            <div class="imgclients"><img src="./Assets/clients/sbs.png" alt=""></div>
         </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="implink" id="navimplinks">
+                <div class="implink-heading">important links</div>
+                <div class="implink-images">
+                    <a href="https://www.dgca.gov.in/digigov-portal/" target="_blank">
+                        <span>
+                            <img src="./Assets/DGCA LOGO.png" alt="DGCA" class="dgca">
+                        </span>
+                        <h4>Directorate General of Civil Aviation</h4>
+                    </a>
+                    <a href="https://www.civilaviation.gov.in/" target="_blank">
+                        <span>
+                            <img src="./Assets/MCA LOGO 1.PNG" alt="" class="mca">
+                        </span>
+                        <h4>Ministry of Civil Aviation</h4>
+                    </a>
+                    <a href="https://bcasindia.gov.in/#/" target="_blank">
+                        <span>
+                            <img src="./Assets/BCAS LOGO.jpeg" alt="" class="bcas">
+                        </span>
+                        <h4>Bureau of Civil Aviation Security</h4>
+                    </a>
+                    <a href="https://www.aai.aero/" target="_blank">
+                        <span>
+                            <img src="./Assets/AAI LOGO.png" alt="" class="aai">
+                        </span>
+                        <h4>Airports Authority of India</h4>
+                    </a>
+                    <a href="https://www.faa.gov/" target="_blank">
+                        <span>
+                            <img src="./Assets/FAA LOGO.png" alt="" class="faa">
+                        </span>
+                        <h4>Federal Aviation Administration</h4>
+                    </a>
+                    <a href="https://www.iata.org/" target="_blank">
+                        <span>
+                            <img src="./Assets/IATA LOGO.png" alt="" class="iata">
+                        </span>
+                        <h4>International Air Transport Association</h4>
+                    </a>
+                    <a href="https://www.aci-europe.org/" target="_blank">
+                        <span>
+                            <img src="./Assets/ACI LOGO.png" alt="" class="aci">
+                        </span>
+                        <h4>Airports Council International</h4>
+                    </a>
+                    <a href="https://www.icao.int/Pages/default.aspx" target="_blank">
+                        <span>
+                            <img src="./Assets/ICAO LOGO.png" alt="" class="icao">
+                        </span>
+                        <h4>International Civil Aviation Organization</h4>
+                    </a>
+                </div>
+            </div>
+        </main>
     <footer>
         <div class="contactmain" id="navcontact">
             <div class="contactheading">aasiana aerotech</div>
@@ -121,38 +170,10 @@
 
 
 
-<dialog data-modal id="contactDialog">
-    <form id="contactForm" onsubmit="disableButton()">
-        <div class="modhead">PLEASE ENTER YOUR DETAILS</div>
 
-        <label for="name">
-            <div class="forms">
-                <span>NAME</span>
-                <input type="text" name="name" placeholder="Enter Your Name" id="name" required>
-            </div>
-        </label>
-        <label for="email">
-            <div class="forms">
-                <span>EMAIL</span>
-                <input type="email" name="email" placeholder="Enter Your Email" id="email" required>
-            </div>
+    <script src="./Js/main.js"></script>
 
-        </label>
-        <label for="text">
-            <div class="forms">
-                <span>MESSAGE</span>
-                <textarea id="message" name="Message" placeholder="Enter Your Message" required></textarea>
-            </div>
-        </label>
-        <div class="btn">
-            <button class="sub" type="submit">SUBMIT</button>
-            <button class=" sub can" data-close-modal type="button">CANCEL</button>
-        </div>
 
-    </form>
-</dialog>
-<script src="./Js/main.js"></script>
-
-    
 </body>
+
 </html>
