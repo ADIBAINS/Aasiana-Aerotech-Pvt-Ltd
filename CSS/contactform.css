@@ -646,9 +646,9 @@ span .icao{
     text-align: center;
 }
 
-/* @media (min-width: 900px){
+@media (max-width : 1400px){
     main{
-        width: 70%;
+        width: 75%;
         height: 70vh;
         display: flex;
         justify-content: space-between;
@@ -668,7 +668,7 @@ span .icao{
     
     
     .contactdetailsform{
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 400;
         font-family:var(--subheading);
         height: 600px;
@@ -677,14 +677,14 @@ span .icao{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        gap: 2.5rem;
+        gap: 0.75rem;
         width: 30%;
     
     
     }
     
     .headingform{
-        font-size: 46px;
+        font-size: 36px;
         font-weight: 600;
         font-family:var(--subheading);
         color: rgba(49, 30, 112, 1);
@@ -696,7 +696,7 @@ span .icao{
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 0.25rem;
+        gap: 0.75rem;
         justify-content: center;
         align-items: flex-start;
         text-align: justify;
@@ -706,7 +706,7 @@ span .icao{
         width: 90%;
     }
     .head{
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
         font-family:var(--subheading);
     }
@@ -731,18 +731,18 @@ span .icao{
     .contactdetailsform:nth-child(1){
         align-items: center;
         justify-content: center;
-        gap: 4rem;
+        gap: 2rem;
         text-transform: uppercase;
     }
     
     form{
-        width: 500px;
-        height: 550px;
+        width: 480px;
+        height: 420px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1.25rem;
+        gap: 0.75rem;
         background-color: rgb(255, 255, 255);
         margin: 0 auto;
     }
@@ -763,8 +763,8 @@ span .icao{
     }
     
     .forms input{
-        width: 300px;
-        height: 35px;
+        width: 260px;
+        height: 27px;
         border-radius: 8px;
         background-color: rgba(255, 255, 255, 0.668);
         color: rgba(49, 30, 112, 1);
@@ -776,8 +776,8 @@ span .icao{
     
     
     .forms textarea{
-        width: 300px;
-        height: 140px;
+        width: 260px;
+        height: 90px;
         background-color: rgba(255, 255, 255, 0.818);
         color: rgb(19, 19, 19);
         font-family: var(--subheading);
@@ -820,7 +820,7 @@ span .icao{
         font-family: var(--subheading);
         font-size: 16px;
         font-weight: 600;
-        padding: 0.75rem 7.3rem;
+        padding: 0.55rem 5.3rem;
         border-radius: 12px;
         background-color: rgba(49, 30, 112, 1);
         color: white;
@@ -831,12 +831,11 @@ span .icao{
     
     .modhead{
         text-align: center;
-        width: 70%;
+        width: 50%;
         font-family: var(--heading);
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 700;
         color: rgba(49, 30, 112, 1);
-        padding: 1rem;
         border-bottom: 1px solid black;
     }
     
@@ -851,4 +850,4 @@ span .icao{
         justify-content: center;
         align-items: center;
     }
-} */
+}
