@@ -25,7 +25,7 @@
     <div class="main">
         <header>
             <nav>
-                <div class="logo"><img src="./Assets/aasiana logo without bg2.PNG" alt="Aasiana Aerotech Pvt Ltd"></div>
+                <div class="logo"><img src="./Assets/aasiana logo without bg.png" alt="Aasiana Aerotech Pvt Ltd"></div>
 
                 <div class="navopt">
                     <ul>
@@ -33,9 +33,8 @@
                         <li class="nav-menu drop"><a href="javascript:void(0);"><i
                                     class="fa-solid fa-caret-down"></i>SERVICES</a>
                             <div class="dropdown">
-                                <a href="ourservices.html" ><span>&bull;</span> Scheduled & Non-Scheduled
-                                    Operators: Permits, Approvals & Extensions</a>
-                                <a href="alliedservices.html"><span>&bull;</span>Allied Services</a>
+                                <a href="ourservices.html" ><span>&bull;</span> Key Services</a>
+                                <a href="alliedservices.html"><span>&bull;</span> Allied Services</a>
                             </div>
                         </li>
                         <li class="nav-menu"><a href="clients.html">CLIENTS</a></li>
@@ -45,7 +44,7 @@
                     </ul>
                 </div>
                 <div class="optjob">
-                    <button class="job-btn" data-open-modal>GET IN TOUCH</button>
+                    <button class="job-btn" onclick="contact()">GET IN TOUCH</button>
                 </div>
             </nav>
         </header>
@@ -60,7 +59,7 @@
 
             <div class="mainintro" id="navhome">
                 <div class="textintro">
-                    <h1 class="headingtextintro">AASIANA AEROTECH</h1>
+                    <h1 class="headingtextintro">ABOUT US</h1>
                     <h3 class="descintro"><div class="t1">Established in 2000, AASIANA AEROTECH PVT LTD is a premier aviation ancillary
                         service provider in India, delivering specialized solutions to both domestic and international
                         operators. Founded by seasoned professionals from the aviation industry, the company has built a
@@ -187,36 +186,7 @@
 
 
 
-    <dialog data-modal id="contactDialog">
-        <form id="contactForm" onsubmit="disableButton()">
-            <div class="modhead">PLEASE ENTER YOUR DETAILS</div>
 
-            <label for="name">
-                <div class="forms">
-                    <span>NAME</span>
-                    <input type="text" name="name" placeholder="Enter Your Name" id="name" required>
-                </div>
-            </label>
-            <label for="email">
-                <div class="forms">
-                    <span>EMAIL</span>
-                    <input type="email" name="email" placeholder="Enter Your Email" id="email" required>
-                </div>
-
-            </label>
-            <label for="text">
-                <div class="forms">
-                    <span>MESSAGE</span>
-                    <textarea id="message" name="Message" placeholder="Enter Your Message" required></textarea>
-                </div>
-            </label>
-            <div class="btn">
-                <button class="sub" type="submit">SUBMIT</button>
-                <button class=" sub can" data-close-modal type="button">CANCEL</button>
-            </div>
-
-        </form>
-    </dialog>
     <script src="./Js/main.js"></script>
 
 
