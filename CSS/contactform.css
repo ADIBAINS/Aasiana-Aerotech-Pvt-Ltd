@@ -274,12 +274,12 @@ main{
 
 form{
     width: 500px;
-    height: 550px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+    gap: 0.75rem;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
 }
@@ -287,7 +287,7 @@ form{
 .forms{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .forms span{
@@ -300,8 +300,8 @@ form{
 }
 
 .forms input{
-    width: 300px;
-    height: 35px;
+    width: 280px;
+    height: 28px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.668);
     color: rgba(49, 30, 112, 1);
@@ -313,8 +313,8 @@ form{
 
 
 .forms textarea{
-    width: 284px;
-    height: 140px;
+    width: 280px;
+    height: 100px;
     background-color: rgba(255, 255, 255, 0.818);
     color: rgb(19, 19, 19);
     font-family: var(--subheading);
@@ -357,7 +357,7 @@ textarea:focus::placeholder {
     font-family: var(--subheading);
     font-size: 16px;
     font-weight: 600;
-    padding: 0.75rem 7.3rem;
+    padding: 0.5rem 6.5rem;
     border-radius: 12px;
     background-color: rgba(49, 30, 112, 1);
     color: white;
@@ -368,12 +368,11 @@ textarea:focus::placeholder {
 
 .modhead{
     text-align: center;
-    width: 70%;
+    width: 50%;
     font-family: var(--heading);
     font-size: 20px;
     font-weight: 700;
     color: rgba(49, 30, 112, 1);
-    padding: 1rem;
     border-bottom: 1px solid black;
 }
 
@@ -384,7 +383,7 @@ textarea:focus::placeholder {
 
 form .btn{
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -646,3 +645,210 @@ span .icao{
     width: 100%;
     text-align: center;
 }
+
+/* @media (min-width: 900px){
+    main{
+        width: 70%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 24px;
+        box-shadow: 2px 3px 6px 1px rgba(49, 30, 112, 0.4) ;
+        margin: 1rem auto;
+    }
+    
+    .head i {
+        font-weight: 600 !important;
+        font-size: 24px;
+        color: rgba(49, 30, 112, 1);
+        padding-right: 1rem;
+    }
+    
+    
+    .contactdetailsform{
+        font-size: 18px;
+        font-weight: 400;
+        font-family:var(--subheading);
+        height: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2.5rem;
+        width: 30%;
+    
+    
+    }
+    
+    .headingform{
+        font-size: 46px;
+        font-weight: 600;
+        font-family:var(--subheading);
+        color: rgba(49, 30, 112, 1);
+        text-align: center;
+    
+    }
+    
+    .addressform{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: justify;
+    }
+    
+    .add{
+        width: 90%;
+    }
+    .head{
+        font-size: 24px;
+        font-weight: 600;
+        font-family:var(--subheading);
+    }
+    .emailform{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .mobileform{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .contactdetailsform:nth-child(1){
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        text-transform: uppercase;
+    }
+    
+    form{
+        width: 500px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+    }
+    
+    .forms{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .forms span{
+        font-family: var(--subheading);
+        font-size: 12px;
+        font-weight: 500;
+        color: rgba(49, 30, 112, 1);
+        letter-spacing: 0.08em;
+        padding: 0 0 0.5rem 0.25rem;
+    }
+    
+    .forms input{
+        width: 300px;
+        height: 35px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.668);
+        color: rgba(49, 30, 112, 1);
+        font-family: var(--subheading);
+        font-size: 18px;
+        padding: 0.25rem;
+        border: 0.5px solid rgba(27, 27, 27, 0.874);
+    }
+    
+    
+    .forms textarea{
+        width: 300px;
+        height: 140px;
+        background-color: rgba(255, 255, 255, 0.818);
+        color: rgb(19, 19, 19);
+        font-family: var(--subheading);
+        font-size: 18px;
+        padding: 0.5rem 0.75rem;
+        border: none;
+        border: 0.75px solid rgba(27, 27, 27, 0.874);
+        border-radius: 8px;
+    
+    }
+    .forms textarea:focus{
+        border-radius: 18px;
+        
+    }
+    
+    .forms textarea::placeholder{
+        display: flex;
+        align-items: flex-start;
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+    
+    
+    input:focus::placeholder {
+        color: transparent;
+      }
+      
+    textarea:focus::placeholder {
+        color: transparent;
+      }
+    
+    .forms input::placeholder{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+    
+    .sub{
+        font-family: var(--subheading);
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0.75rem 7.3rem;
+        border-radius: 12px;
+        background-color: rgba(49, 30, 112, 1);
+        color: white;
+        cursor: pointer;
+    }
+    
+    
+    
+    .modhead{
+        text-align: center;
+        width: 70%;
+        font-family: var(--heading);
+        font-size: 20px;
+        font-weight: 700;
+        color: rgba(49, 30, 112, 1);
+        padding: 1rem;
+        border-bottom: 1px solid black;
+    }
+    
+    .can{
+        background-color: white;
+        color: black;
+    }
+    
+    form .btn{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+} */
